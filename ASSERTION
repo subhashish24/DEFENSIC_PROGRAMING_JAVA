@@ -1,0 +1,16 @@
+public class AssertionClass{
+
+     public static void main(String []args){
+         int f=-5;
+         //int f=Integer.MIN_VALUE;
+         if(f<0){
+             f=-f;
+         }
+        System.out.println("value of f is: "+f);
+        assert (f>=0): "assertion failed, f is negative";
+     }
+}
+
+
+//command javac
+//java -ea (enable assertion)
